@@ -1,7 +1,7 @@
 /* ---- GLOBAL ---- */
 body {
     margin: 0;
-    background: #f5f5f5;            /* slightly darker white */
+    background: #f5f5f5;
     font-family: Helvetica, Arial, sans-serif;
     color: #222;
     font-size: 12.5px;
@@ -37,15 +37,14 @@ body {
     justify-content: flex-end;
 }
 
-/* ---- IMAGE (NEVER CROPS + SLIGHTLY SMALLER) ---- */
+/* ---- IMAGE ---- */
 .profile-photo {
     width: 100%;
-    max-width: 300px;        /* smaller image */
+    max-width: 300px;
     height: auto;
     border-radius: 4px;
     border: 1px solid #e0e0e0;
-
-    object-fit: contain;     /* ensure full image is visible */
+    object-fit: contain;
     object-position: center top;
     display: block;
 }
@@ -64,9 +63,9 @@ body {
     margin-bottom: 28px;
 }
 
-/* ---- HIGHLIGHT (LIGHT BLUE) ---- */
+/* ---- HIGHLIGHT ---- */
 .highlight {
-    background: #dceeff;     /* academic light blue */
+    background: #dceeff;
     padding: 0 3px;
     border-radius: 3px;
 }
@@ -99,18 +98,36 @@ body {
     text-decoration: underline;
 }
 
-/* ---- RESPONSIVE ---- */
+/* ---- RESPONSIVE (MOBILE/TABLET) ---- */
 @media (max-width: 850px) {
+
+    /* stack vertically — but put IMAGE ON TOP */
     .row {
-        flex-direction: column;
+        flex-direction: column-reverse;
+        gap: 25px; /* cleaner spacing for mobile */
     }
 
+    /* IMAGE becomes centered on mobile */
     .right {
-        justify-content: flex-start;
-        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
     }
 
     .profile-photo {
-        max-width: 260px;
+        max-width: 260px; /* slightly smaller for mobile */
+        margin: 0 auto;   /* centers it */
     }
+
+    /* TEXT stays left-aligned (more readable on mobile) */
+    .left {
+        width: 100%;
+        min-width: unset;
+    }
+
+    .container {
+        padding: 0 22px; /* tighter margins for mobile */
+    }
+
 }
