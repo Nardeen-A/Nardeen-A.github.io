@@ -1,7 +1,7 @@
 /* ---- GLOBAL ---- */
 body {
     margin: 0;
-    background: #ffffff;
+    background: #f5f5f5;            /* slightly darker white */
     font-family: Helvetica, Arial, sans-serif;
     color: #222;
     font-size: 12.5px;
@@ -26,6 +26,7 @@ body {
 .left {
     width: 60%;
     min-width: 360px;
+    text-align: left;
 }
 
 /* RIGHT COLUMN */
@@ -36,35 +37,36 @@ body {
     justify-content: flex-end;
 }
 
-/* ---- IMAGE (NEVER CROPPED) ---- */
+/* ---- IMAGE (NEVER CROPS + SLIGHTLY SMALLER) ---- */
 .profile-photo {
     width: 100%;
-    max-width: 380px;
-    height: auto;              /* preserves full image */
+    max-width: 300px;        /* smaller image */
+    height: auto;
     border-radius: 4px;
     border: 1px solid #e0e0e0;
 
-    object-fit: contain;       /* NEVER crop anything */
-    object-position: center top; /* ensures hair stays visible */
-
+    object-fit: contain;     /* ensure full image is visible */
+    object-position: center top;
     display: block;
 }
 
-/* ---- TEXT ---- */
+/* ---- TITLE ---- */
 .title {
     font-size: 2.2rem;
     font-weight: bold;
     margin-bottom: 18px;
 }
 
+/* ---- INTRO ---- */
 .welcome {
     font-size: 1rem;
     line-height: 1.55;
     margin-bottom: 28px;
 }
 
+/* ---- HIGHLIGHT (LIGHT BLUE) ---- */
 .highlight {
-    background: #fff3c4;
+    background: #dceeff;     /* academic light blue */
     padding: 0 3px;
     border-radius: 3px;
 }
@@ -109,6 +111,6 @@ body {
     }
 
     .profile-photo {
-        max-width: 300px;
+        max-width: 260px;
     }
 }
