@@ -37,13 +37,13 @@ body {
     justify-content: flex-end;
 }
 
-/* ---- IMAGE (NEVER CROPS) ---- */
+/* ---- IMAGE ---- */
 .profile-photo {
     width: 100%;
-    max-width: 300px;        
+    max-width: 300px;
     height: auto;
     border-radius: 4px;
-    border: 1px solid #cfcac3;  /* softer clay-gray border */
+    border: 1px solid #cfcac3;  /* soft clay-gray border */
 
     object-fit: contain;
     object-position: center top;
@@ -55,88 +55,4 @@ body {
     font-size: 2.3rem;
     font-weight: bold;
     margin-bottom: 18px;
-    color: #1f1f1f;        /* darker charcoal for headings */
-}
-
-.section-title {
-    font-size: 1.3rem;
-    margin-bottom: 8px;
-    font-weight: bold;
-    color: #1f1f1f;        /* darker charcoal */
-}
-
-/* ---- INTRO ---- */
-.welcome {
-    font-size: 1rem;
-    line-height: 1.55;
-    margin-bottom: 28px;
-}
-
-/* ---- HIGHLIGHT ACCENT (DUSTY BLUE) ---- */
-.highlight {
-    background: #c9d9e8;    /* subtle Muji-style blue */
-    padding: 0 3px;
-    border-radius: 3px;
-}
-
-/* ---- GENERAL TEXT ---- */
-.section-text {
-    font-size: 0.95rem;
-    line-height: 1.5;
-    margin: 3px 0;
-    color: #2b2b2b;
-}
-
-/* ---- PROJECT LIST ---- */
-.project-list {
-    margin: 8px 0 0 20px;
-    padding: 0;
-    color: #2b2b2b;
-    font-size: 0.95rem;
-    line-height: 1.45;
-}
-
-.project-list li {
-    margin-bottom: 6px;
-}
-
-/* ---- LINKS ---- */
-.section-text a {
-    color: #557a9e;            /* muted slate blue link */
-    text-decoration: none;
-}
-
-.section-text a:hover {
-    text-decoration: underline;
-}
-
-/* ---- RESPONSIVE ---- */
-@media (max-width: 850px) {
-
-    /* IMAGE FIRST ON MOBILE */
-    .row {
-        flex-direction: column-reverse;
-        gap: 25px;
-    }
-
-    .right {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 10px;
-    }
-
-    .profile-photo {
-        max-width: 260px;
-        margin: 0 auto;
-    }
-
-    .left {
-        width: 100%;
-        min-width: unset;
-    }
-
-    .container {
-        padding: 0 22px;
-    }
-}
+    color: #1f1f1f;        /* d*
