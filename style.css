@@ -5,6 +5,7 @@ body {
     background: #ffffff;
     font-family: "Inter", sans-serif;
     color: #222;
+    font-size: 14px; /* academic smaller text */
 }
 
 .container {
@@ -17,72 +18,79 @@ body {
 
 .two-column {
     display: flex;
-    justify-content: space-between;
     align-items: flex-start;
-    gap: 60px;
+    justify-content: space-between;
+    gap: 50px;
 }
 
 /* LEFT COLUMN */
 .left-col {
     flex: 1;
+    text-align: left;
 }
 
 /* RIGHT COLUMN */
 .right-col {
-    flex: 0 0 auto;
+    flex-shrink: 0;
 }
 
 /* ---- TITLE ---- */
 
 .title {
     font-family: "Lora", serif;
-    font-size: 3rem;
-    margin-bottom: 25px;
+    font-size: 2.3rem;
+    margin-bottom: 20px;
     color: #111;
 }
 
 /* ---- INTRO ---- */
 
 .welcome {
-    font-size: 1.2rem;
-    line-height: 1.7;
-    margin-bottom: 35px;
+    font-size: 1rem;
+    line-height: 1.65;
+    margin-bottom: 30px;
     color: #333;
 }
 
 .highlight {
     background: #fff3c4;
-    padding: 0 4px;
+    padding: 0 3px;
     border-radius: 3px;
 }
 
-/* ---- IMAGE (BIGGER + NOT CROPPED) ---- */
+/* ---- IMAGE: NO CROPPING EVER ---- */
 
 .profile-photo {
-    width: 340px;        /* LARGER IMAGE */
-    height: auto;        /* SHOW FULL HEIGHT */
-    border-radius: 6px;
-    border: 2px solid #e1e1e1;
-    object-fit: contain; /* DO NOT CROP AT ALL */
+    max-width: 380px;   /* larger image */
+    height: auto;       /* natural height */
+    border-radius: 4px;
+    border: 1px solid #e0e0e0;
+
+    /* ensure the top of your hair is never cropped */
+    object-fit: none;
+    object-position: top left;
+
+    display: block;
 }
 
-/* ---- RESEARCH + CONTACT SECTIONS ---- */
+/* ---- SECTION STYLES ---- */
 
 .info-section {
-    margin-top: 35px;
+    margin-top: 28px;
 }
 
 .section-title {
     font-family: "Lora", serif;
-    font-size: 1.6rem;
-    margin-bottom: 10px;
+    font-size: 1.35rem;
+    margin-bottom: 8px;
     color: #111;
 }
 
 .info-text {
-    font-size: 1.1rem;
-    line-height: 1.7;
+    font-size: 0.95rem;
+    line-height: 1.6;
     margin: 4px 0;
+    color: #333;
 }
 
 /* ---- LINKS ---- */
@@ -104,10 +112,10 @@ body {
     }
 
     .right-col {
-        margin-top: 20px;
+        margin-top: 25px;
     }
 
     .profile-photo {
-        width: 260px;
+        max-width: 260px;
     }
 }
