@@ -1,55 +1,66 @@
 /* ---- GLOBAL ---- */
-
 body {
     margin: 0;
     background: #ffffff;
-    font-family: "Inter", sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     color: #222;
-    font-size: 14px; /* academic smaller text */
+    font-size: 12.5px;
 }
 
 .container {
-    max-width: 1050px;
+    max-width: 1100px;
     margin: 60px auto;
-    padding: 0 30px;
+    padding: 0 40px;
 }
 
 /* ---- TWO COLUMN LAYOUT ---- */
-
-.two-column {
+.row {
     display: flex;
+    flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    gap: 50px;
+    gap: 60px;
 }
 
 /* LEFT COLUMN */
-.left-col {
-    flex: 1;
-    text-align: left;
+.left {
+    width: 60%;
+    min-width: 360px;
 }
 
 /* RIGHT COLUMN */
-.right-col {
-    flex-shrink: 0;
+.right {
+    width: 40%;
+    min-width: 300px;
+    display: flex;
+    justify-content: flex-end;
 }
 
-/* ---- TITLE ---- */
+/* ---- IMAGE (NEVER CROPPED) ---- */
+.profile-photo {
+    width: 100%;
+    max-width: 380px;
+    height: auto;              /* preserves full image */
+    border-radius: 4px;
+    border: 1px solid #e0e0e0;
 
+    object-fit: contain;       /* NEVER crop anything */
+    object-position: center top; /* ensures hair stays visible */
+
+    display: block;
+}
+
+/* ---- TEXT ---- */
 .title {
-    font-family: "Lora", serif;
-    font-size: 2.3rem;
-    margin-bottom: 20px;
-    color: #111;
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 18px;
 }
-
-/* ---- INTRO ---- */
 
 .welcome {
     font-size: 1rem;
-    line-height: 1.65;
-    margin-bottom: 30px;
-    color: #333;
+    line-height: 1.55;
+    margin-bottom: 28px;
 }
 
 .highlight {
@@ -58,64 +69,46 @@ body {
     border-radius: 3px;
 }
 
-/* ---- IMAGE: NO CROPPING EVER ---- */
-
-.profile-photo {
-    max-width: 380px;   /* larger image */
-    height: auto;       /* natural height */
-    border-radius: 4px;
-    border: 1px solid #e0e0e0;
-
-    /* ensure the top of your hair is never cropped */
-    object-fit: none;
-    object-position: top left;
-
-    display: block;
-}
-
-/* ---- SECTION STYLES ---- */
-
-.info-section {
-    margin-top: 28px;
+/* ---- SECTIONS ---- */
+.section {
+    margin-top: 26px;
 }
 
 .section-title {
-    font-family: "Lora", serif;
-    font-size: 1.35rem;
+    font-size: 1.3rem;
     margin-bottom: 8px;
-    color: #111;
+    font-weight: bold;
 }
 
-.info-text {
+.section-text {
     font-size: 0.95rem;
-    line-height: 1.6;
-    margin: 4px 0;
+    line-height: 1.5;
+    margin: 3px 0;
     color: #333;
 }
 
 /* ---- LINKS ---- */
-
-.info-text a {
+.section-text a {
     color: #0056b3;
     text-decoration: none;
 }
 
-.info-text a:hover {
+.section-text a:hover {
     text-decoration: underline;
 }
 
 /* ---- RESPONSIVE ---- */
-
-@media (max-width: 900px) {
-    .two-column {
+@media (max-width: 850px) {
+    .row {
         flex-direction: column;
     }
 
-    .right-col {
-        margin-top: 25px;
+    .right {
+        justify-content: flex-start;
+        margin-top: 20px;
     }
 
     .profile-photo {
-        max-width: 260px;
+        max-width: 300px;
     }
 }
