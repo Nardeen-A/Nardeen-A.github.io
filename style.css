@@ -1,9 +1,9 @@
 /* ---- GLOBAL ---- */
 body {
     margin: 0;
-    background: #ede9e4;            /* slightly darker white */
+    background: #ede9e4;      /* warm porcelain white */
     font-family: Helvetica, Arial, sans-serif;
-    color: #2b2b2b;
+    color: #2b2b2b;           /* charcoal body text */
     font-size: 12.5px;
 }
 
@@ -40,21 +40,29 @@ body {
 /* ---- IMAGE (NEVER CROPS) ---- */
 .profile-photo {
     width: 100%;
-    max-width: 300px;          /* nicely sized */
+    max-width: 300px;        
     height: auto;
     border-radius: 4px;
-    border: 1px solid #e0e0e0;
+    border: 1px solid #cfcac3;  /* softer clay-gray border */
 
-    object-fit: contain;       /* ensures full image shows */
+    object-fit: contain;
     object-position: center top;
     display: block;
 }
 
-/* ---- TITLE ---- */
+/* ---- HEADINGS ---- */
 .title {
-    font-size: 2.2rem;
+    font-size: 2.3rem;
     font-weight: bold;
     margin-bottom: 18px;
+    color: #1f1f1f;        /* darker charcoal for headings */
+}
+
+.section-title {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #1f1f1f;        /* darker charcoal */
 }
 
 /* ---- INTRO ---- */
@@ -64,36 +72,26 @@ body {
     margin-bottom: 28px;
 }
 
-/* ---- HIGHLIGHT (LIGHT BLUE) ---- */
+/* ---- HIGHLIGHT ACCENT (DUSTY BLUE) ---- */
 .highlight {
-    background: #dceeff;
+    background: #c9d9e8;    /* subtle Muji-style blue */
     padding: 0 3px;
     border-radius: 3px;
 }
 
-/* ---- SECTIONS ---- */
-.section {
-    margin-top: 26px;
-}
-
-.section-title {
-    font-size: 1.3rem;
-    margin-bottom: 8px;
-    font-weight: bold;
-}
-
+/* ---- GENERAL TEXT ---- */
 .section-text {
     font-size: 0.95rem;
     line-height: 1.5;
     margin: 3px 0;
-    color: #333;
+    color: #2b2b2b;
 }
 
 /* ---- PROJECT LIST ---- */
 .project-list {
     margin: 8px 0 0 20px;
     padding: 0;
-    color: #333;
+    color: #2b2b2b;
     font-size: 0.95rem;
     line-height: 1.45;
 }
@@ -104,7 +102,7 @@ body {
 
 /* ---- LINKS ---- */
 .section-text a {
-    color: #0056b3;
+    color: #557a9e;            /* muted slate blue link */
     text-decoration: none;
 }
 
@@ -112,36 +110,5 @@ body {
     text-decoration: underline;
 }
 
-/* ---- RESPONSIVE (MOBILE/TABLET) ---- */
-@media (max-width: 850px) {
-
-    /* stack vertically — image on TOP */
-    .row {
-        flex-direction: column-reverse;
-        gap: 25px;
-    }
-
-    /* CENTER image on mobile */
-    .right {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 10px;
-    }
-
-    .profile-photo {
-        max-width: 260px;
-        margin: 0 auto;
-    }
-
-    /* TEXT FULL WIDTH on mobile */
-    .left {
-        width: 100%;
-        min-width: unset;
-    }
-
-    /* better margins on small screens */
-    .container {
-        padding: 0 22px;
-    }
-}
+/* ---- RESPONSIVE ---- */
+@media (max-width:
