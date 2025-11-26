@@ -39,8 +39,8 @@ body {
 
 /* ---- IMAGE (NEVER CROPS) ---- */
 .profile-photo {
-    width: 100%;
-    max-width: 300px;          /* nicely sized */
+    width: 75%;
+    max-width: 250px;          /* nicely sized */
     height: auto;
     border-radius: 4px;
     border: 1px solid #e0e0e0;
