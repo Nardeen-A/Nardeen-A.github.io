@@ -1,39 +1,38 @@
-/* ---------- GLOBAL ---------- */
+/* ---- GLOBAL ---- */
 
 body {
     margin: 0;
-    background: #ffffff;       /* PURE WHITE */
+    background: #ffffff;
     font-family: "Inter", sans-serif;
     color: #222;
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 1050px;
     margin: 60px auto;
     padding: 0 30px;
 }
 
-/* ---------- TWO COLUMN LAYOUT ---------- */
+/* ---- TWO COLUMN LAYOUT ---- */
 
 .two-column {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 40px;
+    gap: 60px;
 }
 
 /* LEFT COLUMN */
 .left-col {
     flex: 1;
-    text-align: left;
 }
 
 /* RIGHT COLUMN */
 .right-col {
-    flex: 0 0 250px;  /* fixed width for photo column */
+    flex: 0 0 auto;
 }
 
-/* ---------- TITLE ---------- */
+/* ---- TITLE ---- */
 
 .title {
     font-family: "Lora", serif;
@@ -42,12 +41,12 @@ body {
     color: #111;
 }
 
-/* ---------- INTRO TEXT ---------- */
+/* ---- INTRO ---- */
 
 .welcome {
     font-size: 1.2rem;
     line-height: 1.7;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     color: #333;
 }
 
@@ -57,69 +56,58 @@ body {
     border-radius: 3px;
 }
 
-/* ---------- PHOTO (SQUARE, RIGHT SIDE) ---------- */
+/* ---- IMAGE (BIGGER + NOT CROPPED) ---- */
 
 .profile-photo {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 0px;          /* NO CURVES — SQUARE */
+    width: 340px;        /* LARGER IMAGE */
+    height: auto;        /* SHOW FULL HEIGHT */
+    border-radius: 6px;
     border: 2px solid #e1e1e1;
+    object-fit: contain; /* DO NOT CROP AT ALL */
 }
 
-/* ---------- RESEARCH INTERESTS ---------- */
+/* ---- RESEARCH + CONTACT SECTIONS ---- */
 
-.research-section {
-    margin-top: 20px;
-    margin-bottom: 30px;
+.info-section {
+    margin-top: 35px;
 }
 
 .section-title {
     font-family: "Lora", serif;
     font-size: 1.6rem;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
+    color: #111;
 }
 
-.research-list {
-    list-style: disc;
-    margin-left: 20px;
+.info-text {
     font-size: 1.1rem;
     line-height: 1.7;
+    margin: 4px 0;
 }
 
-/* ---------- CONTACT BOX ---------- */
+/* ---- LINKS ---- */
 
-.contact-box {
-    padding: 15px 18px;
-    border-left: 4px solid #dcdcdc;
-    background: #fafafa;
-    border-radius: 4px;
-    font-size: 1rem;
-    line-height: 1.6;
-    max-width: 420px;
-}
-
-.contact-box p {
-    margin: 0 0 12px 0;
-}
-
-.contact-box a {
+.info-text a {
     color: #0056b3;
     text-decoration: none;
 }
 
-.contact-box a:hover {
+.info-text a:hover {
     text-decoration: underline;
 }
 
-/* ---------- RESPONSIVE ---------- */
+/* ---- RESPONSIVE ---- */
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     .two-column {
         flex-direction: column;
     }
 
     .right-col {
         margin-top: 20px;
+    }
+
+    .profile-photo {
+        width: 260px;
     }
 }
