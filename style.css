@@ -1,7 +1,7 @@
 /* ---- GLOBAL ---- */
 body {
     margin: 0;
-    background: #f5f5f5;
+    background: #f5f5f5;            /* slightly darker white */
     font-family: Helvetica, Arial, sans-serif;
     color: #222;
     font-size: 12.5px;
@@ -37,14 +37,15 @@ body {
     justify-content: flex-end;
 }
 
-/* ---- IMAGE ---- */
+/* ---- IMAGE (NEVER CROPS) ---- */
 .profile-photo {
     width: 100%;
-    max-width: 300px;
+    max-width: 300px;          /* nicely sized */
     height: auto;
     border-radius: 4px;
     border: 1px solid #e0e0e0;
-    object-fit: contain;
+
+    object-fit: contain;       /* ensures full image shows */
     object-position: center top;
     display: block;
 }
@@ -63,7 +64,7 @@ body {
     margin-bottom: 28px;
 }
 
-/* ---- HIGHLIGHT ---- */
+/* ---- HIGHLIGHT (LIGHT BLUE) ---- */
 .highlight {
     background: #dceeff;
     padding: 0 3px;
@@ -88,6 +89,19 @@ body {
     color: #333;
 }
 
+/* ---- PROJECT LIST ---- */
+.project-list {
+    margin: 8px 0 0 20px;
+    padding: 0;
+    color: #333;
+    font-size: 0.95rem;
+    line-height: 1.45;
+}
+
+.project-list li {
+    margin-bottom: 6px;
+}
+
 /* ---- LINKS ---- */
 .section-text a {
     color: #0056b3;
@@ -101,13 +115,13 @@ body {
 /* ---- RESPONSIVE (MOBILE/TABLET) ---- */
 @media (max-width: 850px) {
 
-    /* stack vertically — but put IMAGE ON TOP */
+    /* stack vertically — image on TOP */
     .row {
         flex-direction: column-reverse;
-        gap: 25px; /* cleaner spacing for mobile */
+        gap: 25px;
     }
 
-    /* IMAGE becomes centered on mobile */
+    /* CENTER image on mobile */
     .right {
         width: 100%;
         display: flex;
@@ -116,18 +130,18 @@ body {
     }
 
     .profile-photo {
-        max-width: 260px; /* slightly smaller for mobile */
-        margin: 0 auto;   /* centers it */
+        max-width: 260px;
+        margin: 0 auto;
     }
 
-    /* TEXT stays left-aligned (more readable on mobile) */
+    /* TEXT FULL WIDTH on mobile */
     .left {
         width: 100%;
         min-width: unset;
     }
 
+    /* better margins on small screens */
     .container {
-        padding: 0 22px; /* tighter margins for mobile */
+        padding: 0 22px;
     }
-
 }
