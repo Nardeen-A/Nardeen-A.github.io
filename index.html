@@ -6,65 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
 
-    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
 
-        <!-- Title -->
-        <h1 class="title">Nardeen Abdulkareem</h1>
+        <!-- LEFT: Text ---- RIGHT: Image -->
+        <div class="two-column">
 
-        <div class="intro-section">
+            <!-- LEFT COLUMN -->
+            <div class="left-col">
 
-            <!-- Photo -->
-            <img src="assets/profile.jpg" alt="Profile photo" class="profile-photo">
+                <h1 class="title">Nardeen Abdulkareem</h1>
 
-            <!-- Text -->
-            <div class="intro-text">
                 <p class="welcome">
-                    I am a Master’s student in Economics at the University of Toronto. 
-                    My academic interests lie in 
-                    <span class="highlight">international trade economics</span>, 
-                    <span class="highlight">machine learning</span>, and 
-                    <span class="highlight">econometrics</span>.  
-                    I focus on building empirical workflows that combine modern ML methods 
-                    with econometric identification to answer real policy questions.
+                    I am a Master’s student in Economics at the University of Toronto.
+                    My academic interests lie in
+                    <span class="highlight">international trade</span>,
+                    <span class="highlight">causal machine learning</span>,
+                    and <span class="highlight">place-based policy</span>. 
                 </p>
 
-                <!-- Contact -->
+                <!-- Research Interests -->
+                <section class="research-section">
+                    <h2 class="section-title">Research Interests</h2>
+                    <ul class="research-list">
+                        <li>International trade and firm responses to policy shocks</li>
+                        <li>Causal machine learning for economic policy evaluation</li>
+                        <li>Place-based policy and regional economic development</li>
+                    </ul>
+                </section>
+
+                <!-- Contact Info -->
                 <div class="contact-box">
-                    <p><strong>Email:</strong> 
+                    <p><strong>Email:</strong>
                         <a href="mailto:nardeen.abdulkareem@mail.utoronto.ca">
                             nardeen.abdulkareem@mail.utoronto.ca
                         </a>
                     </p>
 
-                    <p><strong>LinkedIn:</strong> 
+                    <p><strong>LinkedIn:</strong>
                         <a href="https://www.linkedin.com/in/nardeen-m/" target="_blank">
                             linkedin.com/in/nardeen-m
                         </a>
                     </p>
 
-                    <p><strong>CV:</strong> 
+                    <p><strong>CV:</strong>
                         <a href="assets/Nardeen_Abdulkareem_CV.pdf" target="_blank">
                             Download CV
                         </a>
                     </p>
                 </div>
-            </div>
-        </div>
 
-        <!-- Research Interests Section -->
-        <section class="research-section">
-            <h2 class="section-title">Research Interests</h2>
-            <ul class="research-list">
-                <li>International trade and firm responses to policy shocks</li>
-                <li>Causal machine learning for economic policy evaluation</li>
-                <li>Place-based policy and regional economic development</li>
-            </ul>
-        </section>
+            </div>
+
+            <!-- RIGHT COLUMN -->
+            <div class="right-col">
+                <img src="assets/profile.jpg" alt="Profile photo" class="profile-photo">
+            </div>
+
+        </div>
 
     </div>
 </body>
