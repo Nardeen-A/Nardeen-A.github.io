@@ -55,4 +55,95 @@ body {
     font-size: 2.3rem;
     font-weight: bold;
     margin-bottom: 18px;
-    color: #1f1f1f;        /* d*
+    color: #1f1f1f;        /* dark heading charcoal */
+}
+
+.section-title {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #1f1f1f;
+}
+
+/* ---- INTRO ---- */
+.welcome {
+    font-size: 1rem;
+    line-height: 1.55;
+    margin-bottom: 28px;
+}
+
+/* ---- HIGHLIGHT (SUBTLE BLUE) ---- */
+.highlight {
+    background: #c9d9e8;    /* muted dusty blue */
+    padding: 0 3px;
+    border-radius: 3px;
+}
+
+/* ---- GENERAL TEXT ---- */
+.section-text {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 3px 0;
+    color: #2b2b2b;
+}
+
+/* ---- PROJECT BLOCK (new improved look) ---- */
+.project-block {
+    margin-bottom: 20px;
+}
+
+.project-title {
+    font-weight: 600;
+    color: #1f1f1f;
+    margin-bottom: 4px;
+    font-size: 1.02rem;
+}
+
+.project-desc {
+    margin: 0;
+    color: #2b2b2b;
+    line-height: 1.45;
+    font-size: 0.95rem;
+    padding-left: 6px;
+    border-left: 3px solid #c9d9e8;   /* subtle blue accent */
+}
+
+/* ---- LINKS ---- */
+.section-text a {
+    color: #557a9e;            /* muted slate blue */
+    text-decoration: none;
+}
+
+.section-text a:hover {
+    text-decoration: underline;
+}
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 850px) {
+
+    .row {
+        flex-direction: column-reverse;  /* image on top */
+        gap: 25px;
+    }
+
+    .right {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .profile-photo {
+        max-width: 260px;
+        margin: 0 auto;
+    }
+
+    .left {
+        width: 100%;
+        min-width: unset;
+    }
+
+    .container {
+        padding: 0 22px;
+    }
+}
