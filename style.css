@@ -93,10 +93,10 @@ body {
 }
 
 .project-title {
-    color: #2b2b2b;
-    line-height: 1.5;
-    margin-bottom: 4px;
-    font-size: 1rem;
+    font-weight: 400;        /* normal weight instead of bold */
+    color: #2b2b2b;          /* same as body text for softer look */
+    margin-bottom: 6px;
+    font-size: 1rem;  
 }
 
 .project-desc {
