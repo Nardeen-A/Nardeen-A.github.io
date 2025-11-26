@@ -111,4 +111,32 @@ body {
 }
 
 /* ---- RESPONSIVE ---- */
-@media (max-width:
+@media (max-width: 850px) {
+
+    /* IMAGE FIRST ON MOBILE */
+    .row {
+        flex-direction: column-reverse;
+        gap: 25px;
+    }
+
+    .right {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .profile-photo {
+        max-width: 260px;
+        margin: 0 auto;
+    }
+
+    .left {
+        width: 100%;
+        min-width: unset;
+    }
+
+    .container {
+        padding: 0 22px;
+    }
+}
