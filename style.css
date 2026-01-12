@@ -111,13 +111,13 @@ body {
 /* ---- LINKS ---- */
 
 .section-text a,
-.project-desc a {
+.project-title a {
     color: #557a9e;
     text-decoration: none;
 }
 
 .section-text a:hover,
-.project-desc a:hover {
+.project-title a:hover {
     text-decoration: underline;
 }
 
