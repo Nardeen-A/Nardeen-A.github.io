@@ -109,12 +109,15 @@ body {
 }
 
 /* ---- LINKS ---- */
-.section-text a {
-    color: #557a9e;            /* muted slate blue */
+
+.section-text a,
+.project-desc a {
+    color: #557a9e;
     text-decoration: none;
 }
 
-.section-text a:hover {
+.section-text a:hover,
+.project-desc a:hover {
     text-decoration: underline;
 }
 
