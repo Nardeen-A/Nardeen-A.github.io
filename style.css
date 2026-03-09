@@ -40,7 +40,7 @@ body {
 /* ---- IMAGE ---- */
 .profile-photo {
     width: 100%;
-    max-width: 300px;
+    max-width: 600px;
     height: auto;
     border-radius: 4px;
     border: 1px solid #cfcac3;  /* soft clay-gray border */
